@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\ModuleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,4 +37,8 @@ Route::controller(CategoryController::class)->group(function () {
 Route::controller(CourseController::class)->group(function () {
     Route::get('/courses/list', 'index');
     Route::get('/get-courses/{category}', 'getCoureseByCategory');
+});
+
+Route::controller(ModuleController::class)->group(function () {
+    Route::get('/modules/list/{course}', 'index');
 });
