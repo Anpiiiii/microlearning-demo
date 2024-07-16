@@ -7,6 +7,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\ModuleController;
 use App\Http\Controllers\QuestionController;
+use App\Http\Controllers\ModuleDataController;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,4 +47,8 @@ Route::controller(ModuleController::class)->group(function () {
 
 Route::controller(QuestionController::class)->group(function () {
     Route::get('/questions/list/{course}', 'index');
+});
+
+Route::controller(ModuleDataController::class)->group(function () {
+    Route::get('/module-data/list/{module}', 'index');
 });
