@@ -51,8 +51,8 @@ class CourseController extends Controller
         ]);
     }
 
-    public function myCourse($user){
-        $courses = Course::join('purchases' , 'purchases.courses_id', 'courses.id')
+    public function myCourses($user){
+        $courses = Course::join('purchases', 'purchases.course_id', 'courses.id')
                             ->where('purchases.user_id', $user)
                             ->get();
 

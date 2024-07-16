@@ -9,6 +9,7 @@ use App\Http\Controllers\ModuleController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\ModuleDataController;
 use App\Http\Controllers\PurchaseController;
+use App\Http\Controllers\ProgressController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,7 +41,7 @@ Route::controller(CategoryController::class)->group(function () {
 Route::controller(CourseController::class)->group(function () {
     Route::get('/courses/list', 'index');
     Route::get('/get-courses/{category}', 'getCoureseByCategory');
-    Route::get('/my-courses/{user}', 'mycourses');
+    Route::get('/my-courses/{user}', 'myCourses');
 });
 
 Route::controller(ModuleController::class)->group(function () {
@@ -56,4 +57,10 @@ Route::controller(ModuleDataController::class)->group(function () {
 });
 
 Route::controller(PurchaseController::class)->group(function () {
+    Route::post('/purchase', 'store');
+});
+
+Route::controller(ProgressController::class)->group(function () {
+    Route::post('/progress-done', 'store');
+    Route::get('/progress/{user}', 'myProgress');
 });
