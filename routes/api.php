@@ -6,6 +6,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\ModuleController;
+use App\Http\Controllers\QuestionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,4 +42,8 @@ Route::controller(CourseController::class)->group(function () {
 
 Route::controller(ModuleController::class)->group(function () {
     Route::get('/modules/list/{course}', 'index');
+});
+
+Route::controller(QuestionController::class)->group(function () {
+    Route::get('/questions/list/{course}', 'index');
 });

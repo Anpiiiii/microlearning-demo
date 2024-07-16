@@ -14,5 +14,8 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(CategorySeeder::class);
         $this->call(CourseSeeder::class);
+        $this->call(ModuleSeeder::class);
+        $this->call(QuestionSeeder::class);
+        $this->call(ChoiceSeeder::class);
     }
 }
