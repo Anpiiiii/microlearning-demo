@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Course;
 use App\Models\Category;
+use App\Models\Purchase;
 
 class CourseController extends Controller
 {
@@ -48,5 +49,19 @@ class CourseController extends Controller
             'code' => 200,
             'data' => $courses,
         ]);
+    }
+
+    public function myCourse($user){
+        $courses = Course::join('purchases' , 'purchases.courses_id', 'courses.id')
+                            ->where('purchases.user_id', $user)
+                            ->get();
+
+        return response()->json([
+            'status' => 'success',
+            'message' => 'Courses Fetched Successfully',
+            'code' => 200,
+            'data' => $courses,
+        ]);
+        
     }
 }

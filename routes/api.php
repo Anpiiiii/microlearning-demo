@@ -8,6 +8,7 @@ use App\Http\Controllers\CourseController;
 use App\Http\Controllers\ModuleController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\ModuleDataController;
+use App\Http\Controllers\PurchaseController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,6 +40,7 @@ Route::controller(CategoryController::class)->group(function () {
 Route::controller(CourseController::class)->group(function () {
     Route::get('/courses/list', 'index');
     Route::get('/get-courses/{category}', 'getCoureseByCategory');
+    Route::get('/my-courses/{user}', 'mycourses');
 });
 
 Route::controller(ModuleController::class)->group(function () {
@@ -51,4 +53,7 @@ Route::controller(QuestionController::class)->group(function () {
 
 Route::controller(ModuleDataController::class)->group(function () {
     Route::get('/module-data/list/{module}', 'index');
+});
+
+Route::controller(PurchaseController::class)->group(function () {
 });
