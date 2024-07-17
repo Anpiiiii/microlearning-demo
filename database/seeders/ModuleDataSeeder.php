@@ -14,7 +14,7 @@ class ModuleDataSeeder extends Seeder
     public function run(): void
     {
         ModuleData::Create([
-            'module_id' => '2',
+            'module_id' => '1',
             'data_en' => json_encode(['Any business or company has a department which takes care of managing the infrastructure, utilities (like electricity), company assets, and other responsibilities like travel bookings, etc.',
                            'Infrastructure management, under admin department, may include maintenance and upkeep of office premises, security, housekeeping and cleanliness',
                            'Utilities include electricity, water, waste disposal, heating/cooling and sewage. Admin team must ensure that these services are available and used without wastage for efficient running of the operations.',
@@ -30,7 +30,7 @@ class ModuleDataSeeder extends Seeder
         ]);
 
         ModuleData::Create([
-            'module_id' => '3',
+            'module_id' => '2',
             'data_en' => json_encode(['Administration teams look for new vendors(with support from procurement teams), negotiate contracts and ensure efficient of services or assets. In general, these assets /services are not IT related.',
                            'Contracts with respect to physical security of the business premises and employee transportation is also under admin department',
                            'As for other departments Admin team also works with budget and plans the expense with reference to these budgets',
@@ -47,7 +47,7 @@ class ModuleDataSeeder extends Seeder
         ]);
 
         ModuleData::Create([
-            'module_id' => '4',
+            'module_id' => '3',
             'data_en' => json_encode(['Vendor Management: Long-term Contract Management with vendors is a part of this role. Contracts are generally negotiated on quality of service/duration and pricing. Representative list of  contracts under Admin team are as below:',
                            '- Housekeeping Staff Contract for upkeep of office premises',
                            '- Contract with security companies for physical security of office premises',
@@ -67,7 +67,7 @@ class ModuleDataSeeder extends Seeder
         ]);
 
         ModuleData::Create([
-            'module_id' => '5',
+            'module_id' => '4',
             'data_en' => json_encode(['Annual Maintenance Contract: Contracts for regular maintenance and support for company assets during the year.',
                            'Housekeeping: Contractual staff used for keeping office premises clean and hygienic.',
                            'Invoice: Invoices are legal document raised by the vendor company asking the other company to pay in return of services or goods provided. Admin team checks and confirms the payment request put by vendor on invoices for services under admin department',
@@ -92,7 +92,7 @@ class ModuleDataSeeder extends Seeder
 
 
         ModuleData::Create([
-            'module_id' => '6',
+            'module_id' => '5',
             'data_en' => json_encode(['Any business or company sells services(like mobile repairing) or products(like mobiles) and earns money',
                            'To sell these, first the company must make it or buy it. So, it must spend money on doing so. It must also spend on transporting the products or delivering the services. Similarly, it spends on many other aspects to make or buy the product.',
                            'As a result, a part of the company sales or revenues by selling goes back to buy or make the product/service',
@@ -108,7 +108,7 @@ class ModuleDataSeeder extends Seeder
         ]);
 
         ModuleData::Create([
-            'module_id' => '7',
+            'module_id' => '6',
             'data_en' => json_encode(['Finance department pays a huge role within a business organization',
                            'It acts as gatekeeper and keeps an eye on revenues and spends ensuring revenues are earned legally/taxes are paid/budget the spending to avoid excess expense affecting profits. Personnel working with such responsibilities are called as financial controllers',
                            'This same function works closely with other departments like strategy/operations/sales etc. to get investments(money needed) for new projects/company expansion into new geographies or any other initiative company decided upon',
@@ -126,7 +126,7 @@ class ModuleDataSeeder extends Seeder
         ]);
 
         ModuleData::Create([
-            'module_id' => '8',
+            'module_id' => '7',
             'data_en' => json_encode(['Contract management: A contract is a legal binding document detailing the monetary payment and transfer of goods, services in return of those payments. A contract has terms and conditions which needs to be followed for a successful execution. Finance team members help in managing the contracts by making/receiving payments, ensuring validity of the contract while respecting the terms and conditions',
                            'Invoice Management: Invoices are legal document raised by a company asking the other company or individual to pay in return of services or goods paid. Finance team personnel play an active role in raising invoice to customers for payment ensuring timely payments for invoice raised by vendors to their own organization.',
                            'Investment Management: This role entails to secure investment for growing the company by new business expansion, merge with or acquire another company and sometimes, by selling a part of the company to better business prospects',
@@ -138,7 +138,7 @@ class ModuleDataSeeder extends Seeder
         ]);
 
         ModuleData::Create([
-            'module_id' => '9',
+            'module_id' => '8',
             'data_en' => json_encode(['Have a clear understanding of whether the company is into to Business-to-Business sales(B2B) or Business to Consumer (B2C) sales. A large business can be into both type of sales.',
                            'A company can be in different industry like Ecommerce(Shop.com)/Telecom(Atom)/Automobile/Metals and Mining etc. Knowing the industry or the sector of the business is very helpful to understand the business',
                            'Understand the business of the company by knowing what the company sells and who buys like:',
