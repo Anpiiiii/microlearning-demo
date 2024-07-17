@@ -97,4 +97,15 @@ class AuthController extends Controller
         ]);
     }
 
+    public function me(){
+        $user = auth()->user();
+
+        return response()->json([
+            'status' => 'success',
+            'message' => 'User Fetched Successfully',
+            'code' => 200,
+            'data' => $user,
+        ]);
+    }
+
 }
