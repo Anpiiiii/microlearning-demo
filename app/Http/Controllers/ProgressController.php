@@ -37,7 +37,11 @@ class ProgressController extends Controller
                                     ->where('user_id', $user)
                                     ->count();
 
-            $course->progress = ($doneModules/$total_modules) * 100; 
+            if($doneModules == 0){
+                $course->progress = 0;
+            }else{
+                $course->progress = ($doneModules/$total_modules) * 100; 
+            }           
         }
 
         return response()->json([
