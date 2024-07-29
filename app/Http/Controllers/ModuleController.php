@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Module;
 use App\Models\Course;
 use App\Models\Category;
+use App\Models\ModuleData;
 
 class ModuleController extends Controller
 {
@@ -21,6 +22,7 @@ class ModuleController extends Controller
         foreach ($modules as $module) {
             $module->course = Course::find($module->course_id);
             $module->category = Category::find($module->course->category->id);
+            $module->module_data = ModuleData::where('module_id', $module_id)->get();
         }
 
         return response()->json([
