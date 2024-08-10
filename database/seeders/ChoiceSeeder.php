@@ -257,5 +257,128 @@ class ChoiceSeeder extends Seeder
             'name_mm' => 'မှားတယ်။',
             'question_id' => 13
         ]);
+
+        Choice::Create([
+            'name_en' => 'Managing information flow',
+            'name_mm' => 'မှားတယ်။',
+            'question_id' => 14
+        ]); 
+        Choice::Create([
+            'name_en' => 'Developing software',
+            'name_mm' => 'မှားတယ်။',
+            'question_id' => 14
+        ]); 
+        Choice::Create([
+            'name_en' => 'Managing Annual Maintenance Contract',
+            'name_mm' => 'မှားတယ်။',
+            'question_id' => 14
+        ]); 
+        Choice::Create([
+            'name_en' => 'All the above',
+            'name_mm' => 'မှားတယ်။',
+            'question_id' => 14
+        ]);
+
+        Choice::Create([
+            'name_en' => 'Involves in buying software and hardware',
+            'name_mm' => 'မှားတယ်။',
+            'question_id' => 15
+        ]);
+        Choice::Create([
+            'name_en' => 'Selling software and Hardware',
+            'name_mm' => 'မှားတယ်။',
+            'question_id' => 15
+        ]);
+        Choice::Create([
+            'name_en' => 'Manage Uptime',
+            'name_mm' => 'မှားတယ်။',
+            'question_id' => 15
+        ]);
+        Choice::Create([
+            'name_en' => 'None of the Above',
+            'name_mm' => 'မှားတယ်။',
+            'question_id' => 15
+        ]);
+
+        Choice::Create([
+            'name_en' => '99.5% Uptime',
+            'name_mm' => 'မှားတယ်။',
+            'question_id' => 16
+        ]);Choice::Create([
+            'name_en' => '24*5 days Support',
+            'name_mm' => 'မှားတယ်။',
+            'question_id' => 16
+        ]);Choice::Create([
+            'name_en' => 'Resolution of any issue with 36 hours',
+            'name_mm' => 'မှားတယ်။',
+            'question_id' => 16
+        ]);Choice::Create([
+            'name_en' => 'None of the Above',
+            'name_mm' => 'မှားတယ်။',
+            'question_id' => 16
+        ]);
+
+        Choice::Create([
+            'name_en' => 'OEM Management',
+            'name_mm' => 'မှားတယ်။',
+            'question_id' => 17
+        ]);
+        Choice::Create([
+            'name_en' => 'Software Upgrades ',
+            'name_mm' => 'မှားတယ်။',
+            'question_id' => 17
+        ]);
+        Choice::Create([
+            'name_en' => 'Securing from cyber attacks from internet',
+            'name_mm' => 'မှားတယ်။',
+            'question_id' => 17
+        ]);
+        Choice::Create([
+            'name_en' => 'Managing company operations',
+            'name_mm' => 'မှားတယ်။',
+            'question_id' => 17
+        ]);
+
+        Choice::Create([
+            'name_en' => 'IT personnel',
+            'name_mm' => 'မှားတယ်။',
+            'question_id' => 18
+        ]);
+        Choice::Create([
+            'name_en' => 'Customers',
+            'name_mm' => 'မှားတယ်။',
+            'question_id' => 18
+        ]);
+        Choice::Create([
+            'name_en' => 'Contracts',
+            'name_mm' => 'မှားတယ်။',
+            'question_id' => 18
+        ]);
+        Choice::Create([
+            'name_en' => 'Original Equipment Manufacturer(OEM)',
+            'name_mm' => 'မှားတယ်။',
+            'question_id' => 18
+        ]);
+
+        Choice::Create([
+            'name_en' => 'Patch Management',
+            'name_mm' => 'မှားတယ်။',
+            'question_id' => 19
+        ]);
+        Choice::Create([
+            'name_en' => 'Hardware maintenance ',
+            'name_mm' => 'မှားတယ်။',
+            'question_id' => 19
+        ]);
+        Choice::Create([
+            'name_en' => 'Cybersecurity',
+            'name_mm' => 'မှားတယ်။',
+            'question_id' => 19
+        ]);
+        Choice::Create([
+            'name_en' => 'Data storage in servers',
+            'name_mm' => 'မှားတယ်။',
+            'question_id' => 19
+        ]);
     }
 }

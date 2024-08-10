@@ -13,86 +13,9 @@ class ModuleDataSeeder extends Seeder
      */
     public function run(): void
     {
+        ////////////////////////////Finance////////////////////////////
         ModuleData::Create([
             'module_id' => '1',
-            'data_en' => json_encode(['Any business or company has a department which takes care of managing the infrastructure, utilities (like electricity), company assets, and other responsibilities like travel bookings, etc.',
-                           'Infrastructure management, under admin department, may include maintenance and upkeep of office premises, security, housekeeping and cleanliness',
-                           'Utilities include electricity, water, waste disposal, heating/cooling and sewage. Admin team must ensure that these services are available and used without wastage for efficient running of the operations.',
-                           'Rented or Owned Company assets (mostly non-IT) like company vehicles, generators, cubicles, aircon etc. also come under the purview of Admin team',
-                           'Administration department like IT department is a very important enabler for any business organization'
-                ]),
-            'data_mm' => json_encode(['မည်သည့်လုပ်ငန်း သို့မဟုတ် ကုမ္ပဏီမဆို အခြေခံအဆောက်အအုံ၊ အသုံးအဆောင်များ (လျှပ်စစ်ဓာတ်အား)၊ ကုမ္ပဏီ၏ပိုင်ဆိုင်မှုများနှင့် ခရီးသွားကြိုတင်စာရင်းသွင်းခြင်း စသည်တို့ကဲ့သို့သော အခြားတာဝန်များကို စီမံခန့်ခွဲပေးသည့် ဌာနတစ်ခုရှိသည်။',
-                        'စီမံခန့်ခွဲရေးဌာနလက်အောက်ရှိ အခြေခံအဆောက်အဦစီမံခန့်ခွဲမှု၊ ရုံးပရဝုဏ်ကို ပြုပြင်ထိန်းသိမ်းမှု၊ လုံခြုံရေး၊ အိမ်သန့်ရှင်းရေးနှင့် သန့်ရှင်းရေးတို့ ပါဝင်နိုင်သည်။',
-                        'အသုံးအဆောင်များတွင် လျှပ်စစ်၊ ရေ၊ အမှိုက်စွန့်ပစ်မှု၊ အပူ/အအေးခံခြင်းနှင့် မိလ္လာများ ပါဝင်သည်။ စီမံခန့်ခွဲသူအဖွဲ့သည် ဤဝန်ဆောင်မှုများကို ရရှိနိုင်ပြီး လုပ်ဆောင်ချက်များကို ထိရောက်စွာလည်ပတ်နိုင်ရန် အလေအလွင့်မရှိဘဲ အသုံးပြုကြောင်း သေချာစေရမည်။',
-                        'အသုံးအဆောင်များတွင် လျှပ်စစ်၊ ရေ၊ အမှိုက်စွန့်ပစ်မှု၊ အပူ/အအေးခံခြင်းနှင့် မိလ္လာများ ပါဝင်သည်။ စီမံခန့်ခွဲသူအဖွဲ့သည် ဤဝန်ဆောင်မှုများကို ရရှိနိုင်ပြီး လုပ်ဆောင်ချက်များကို ထိရောက်စွာလည်ပတ်နိုင်ရန် အလေအလွင့်မရှိဘဲ အသုံးပြုကြောင်း သေချာစေရမည်။',
-                        'အိုင်တီဌာနကဲ့သို့ စီမံခန့်ခွဲရေးဌာနသည် လုပ်ငန်းအဖွဲ့အစည်းတိုင်းအတွက် အလွန်အရေးပါသော လုပ်ငန်းဆောင်တာတစ်ခုဖြစ်သည်။'
-            ])
-        ]);
-
-        ModuleData::Create([
-            'module_id' => '2',
-            'data_en' => json_encode(['Administration teams look for new vendors(with support from procurement teams), negotiate contracts and ensure efficient of services or assets. In general, these assets /services are not IT related.',
-                           'Contracts with respect to physical security of the business premises and employee transportation is also under admin department',
-                           'As for other departments Admin team also works with budget and plans the expense with reference to these budgets',
-                           'Admin expenses with respect to budgeting is an important key performance indicator(KPI) for Admin team',
-                           'Additionally, administration team members ensure timely payment of utility bills and availability of such services for smooth running of the organization.',
-                           'This team also helps in arranging power backup or support with alternate vendors in case of any disruption with the existing vendors/services'
-                ]),
-            'data_mm' => json_encode(['အုပ်ချုပ်ရေးအဖွဲ့များသည် ရောင်းသူအသစ်များ (ဝယ်ယူရေးအဖွဲ့များထံမှ ပံ့ပိုးမှုဖြင့်)၊ စာချုပ်များကို ညှိနှိုင်းပြီး ဝန်ဆောင်မှုများ သို့မဟုတ် ပိုင်ဆိုင်မှုများကို ထိရောက်မှုရှိစေရန် သေချာစေသည်။ ယေဘုယျအားဖြင့်၊ ဤပိုင်ဆိုင်မှု/ဝန်ဆောင်မှုများသည် IT နှင့်မသက်ဆိုင်ပါ။',
-                        'လုပ်ငန်းခွင်လုံခြုံရေးနှင့် ဝန်ထမ်းသယ်ယူပို့ဆောင်ရေးဆိုင်ရာ စာချုပ်များသည် စီမံခန့်ခွဲရေးဌာန၏ လက်အောက်တွင်ရှိသည်။',
-                        'အခြားဌာနများအတွက် စီမံခန့်ခွဲရေးအဖွဲ့သည်လည်း ဘတ်ဂျက်ဖြင့် လုပ်ဆောင်ပြီး အဆိုပါဘတ်ဂျက်များကို ကိုးကား၍ ကုန်ကျစရိတ်များကို စီစဉ်ပေးသည်။',
-                        'ထို့အပြင်၊ စီမံခန့်ခွဲရေးအဖွဲ့၀င်များသည် အဖွဲ့အစည်း၏လည်ပတ်မှုချောမွေ့စေရန်အတွက် utility bills များကို အချိန်နှင့်တစ်ပြေးညီ ပေးချေနိုင်စေရန်နှင့် ထိုဝန်ဆောင်မှုများရရှိနိုင်မှုကို သေချာစေသည်။',
-                        'ဤအဖွဲ့သည် လက်ရှိရောင်းချသူများ/ဝန်ဆောင်မှုများနှင့် အနှောင့်အယှက်တစ်စုံတစ်ရာဖြစ်လာပါက ပါဝါအရန်သိမ်းခြင်း သို့မဟုတ် အစားထိုးရောင်းချသူများနှင့် ပံ့ပိုးကူညီရာတွင်လည်း ကူညီပေးပါသည်။'
-            ])
-        ]);
-
-        ModuleData::Create([
-            'module_id' => '3',
-            'data_en' => json_encode(['Vendor Management: Long-term Contract Management with vendors is a part of this role. Contracts are generally negotiated on quality of service/duration and pricing. Representative list of  contracts under Admin team are as below:',
-                           '- Housekeeping Staff Contract for upkeep of office premises',
-                           '- Contract with security companies for physical security of office premises',
-                           '- Transportation vendor contracts for local and international travel',
-                           '- Contract with cafeteria vendors for employee food arrangements',
-                           'Asset Management: Except IT assts like laptop/mobile/desktop etc. most other assets like furniture, company vehicles, white goods like Aircon etc. are managed by admin personnel. Such responsibility will also include regular and timely maintenance of these assets.',
-                           'Administration team personnel work closely with other departments like IT/HR/Operations/finances and sales for any interdepartmental projects'
-                ]),
-            'data_mm' => json_encode(['ရောင်းချသူစီမံခန့်ခွဲမှု- ရောင်းချသူများနှင့် ရေရှည်စာချုပ်စီမံခန့်ခွဲမှုသည် ဤအခန်းကဏ္ဍ၏ အစိတ်အပိုင်းတစ်ခုဖြစ်သည်။ စာချုပ်များသည် ဝန်ဆောင်မှုအရည်အသွေး/ကာလနှင့် ဈေးနှုန်းအပေါ် ယေဘုယျအားဖြင့် ညှိနှိုင်းကြသည်။ Admin Team လက်အောက်ရှိ စာချုပ်ကိုယ် စားလှယ်များစာရင်းမှာ အောက်ပါအတိုင်းဖြစ်သည်။',
-                        '- ရုံးခန်းပရဝုဏ်ကို ပြုပြင်ထိန်းသိမ်းရန်အတွက် နေရာထိုင်ခင်းဝန်ထမ်း စာချုပ်',
-                        '- ရုံးပရဝုဏ်အတွင်း လုံခြုံရေးအတွက် လုံခြုံရေးကုမ္ပဏီများနှင့် စာချုပ်ချုပ်ဆိုခြင်း။',
-                        '- ပြည်တွင်းပြည်ပ ခရီးသွားများအတွက် သယ်ယူပို့ဆောင်ရေး ရောင်းချသူ စာချုပ်များ',
-                        '- ဝန်ထမ်းအစားအသောက်အစီအစဉ်များအတွက် ကော်ဖီဆိုင်ရောင်းချသူများနှင့် စာချုပ်ချုပ်ဆိုခြင်း။',
-                        'ပိုင်ဆိုင်မှုစီမံခန့်ခွဲမှု- လက်ပ်တော့/မိုဘိုင်း/ဒက်စ်တော့စသည့် အိုင်တီအကူအညီမှလွဲ၍ အခြားပစ္စည်းများ၊ ပရိဘောဂများ၊ ကုမ္ပဏီယာဉ်များ၊ Aircon ကဲ့သို့သော အဖြူရောင်ပစ္စည်းများစသည်ဖြင့် စီမံခန့်ခွဲရေးဝန်ထမ်းများက စီမံခန့်ခွဲပါသည်။ ဤတာဝန်ဝတ္တရားများသည် ဤပိုင်ဆိုင်မှုများကို ပုံမှန်နှင့် အချိန်မီ ထိန်းသိမ်းခြင်းလည်း ပါဝင်သည်။',
-                        'အုပ်ချုပ်ရေးအဖွဲ့မှ ဝန်ထမ်းများသည် IT/HR/Operations/ Finance နှင့် အရောင်းဌာနများကဲ့သို့သော အခြားဌာနများနှင့် နီးနီးကပ်ကပ် အလုပ်လုပ်ပါသည်။'
-            ])
-        ]);
-
-        ModuleData::Create([
-            'module_id' => '4',
-            'data_en' => json_encode(['Annual Maintenance Contract: Contracts for regular maintenance and support for company assets during the year.',
-                           'Housekeeping: Contractual staff used for keeping office premises clean and hygienic.',
-                           'Invoice: Invoices are legal document raised by the vendor company asking the other company to pay in return of services or goods provided. Admin team checks and confirms the payment request put by vendor on invoices for services under admin department',
-                           'Service Level Agreements(SLA): SLA serves refers to the standards the vendor must follow and the metrics to measure the performance. Some examples as below:',
-                           '- SLA for a new purchase of Aircon may include periodic checkup/maintenance and free of cost replacement within 6 months of purchase',
-                           '- SLA for a housekeeping contract may include minimum number of housekeeping staff provided by vendor for any day',
-                           '- SLA for transportation vendor providing vehicles for company people or goods may include on time delivery, quantity of goods damage and quality of vehicles used',
-                           'Cash Voucher : Admin team also uses cash for quick and efficient payments of small expenses and such expenses are booked by vouchers. Thes expenses are generally not covered under any contract. The payment for such expenses are done from “petty cash” which are small amounts of cash available with Admin department for smaller amounts of daily expenses.'
-                ]),
-            'data_mm' => json_encode(['နှစ်စဉ်ထိန်းသိမ်းမှုစာချုပ်- တစ်နှစ်တာအတွင်း ကုမ္ပဏီပိုင်ဆိုင်မှုများအတွက် ပုံမှန်ထိန်းသိမ်းမှုနှင့် ပံ့ပိုးမှုများအတွက် စာချုပ်များ။',
-                        'နေရာထိုင်ခင်းထိန်းသိမ်းခြင်း- ရုံးခန်းပရဝုဏ်အတွင်း သန့်ရှင်းရေးနှင့် တစ်ကိုယ်ရေသန့်ရှင်းမှုအတွက် အသုံးပြုသည့် စာချုပ်ပါဝန်ထမ်းများ။',
-                        'ပြေစာ- ပြေစာများသည် အခြားကုမ္ပဏီအား ဝန်ဆောင်မှုများ သို့မဟုတ် ကုန်ပစ္စည်းများ ပြန်လည်ပေးချေရန် တောင်းဆိုသည့် ရောင်းချသူကုမ္ပဏီမှ တရားဝင်စာရွက်စာတမ်းများဖြစ်သည်။ အက်ဒ်မင်အဖွဲ့သည် စီမံခန့်ခွဲသူဌာနလက်အောက်ရှိ ဝန်ဆောင်မှုများအတွက် ပြေစာများတွင် ရောင်းချသူမှ တောင်းဆိုသည့် ငွေပေးချေမှုကို စစ်ဆေးပြီး အတည်ပြုသည်။',
-                        'ဝန်ဆောင်မှုအဆင့် သဘောတူညီချက်များ(SLA)- SLA သည် ရောင်းချသူလိုက်နာရမည့် စံနှုန်းများနှင့် စွမ်းဆောင်ရည်ကို တိုင်းတာရန် မက်ထရစ်များကို ရည်ညွှန်းသည်။ အောက်ပါအတိုင်းဖြစ်သည်။',
-                        '- Aircon အသစ်ဝယ်ယူမှုအတွက် SLA သည် အချိန်ကာလအလိုက် စစ်ဆေးခြင်း/ ပြုပြင်ထိန်းသိမ်းခြင်း နှင့် ဝယ်ယူပြီး 6 လအတွင်း အခမဲ့ အစားထိုးလဲလှယ်ခြင်း ပါဝင်သည်။',
-                        '- SLA သည် အိမ်တွင်းရေးစာချုပ်တစ်ခုအတွက် မည်သည့်နေ့အတွက်မဆို ရောင်းချသူမှ ပံ့ပိုးပေးသော အနည်းဆုံး အိမ်စောင့်ဝန်ထမ်းအရေအတွက် ပါဝင်သည်။',
-                        '- သယ်ယူပို့ဆောင်ရေးရောင်းချသူအတွက် SLA သည် ကုမ္ပဏီလူများအတွက် သို့မဟုတ် ကုန်ပစ္စည်းများကို အချိန်မီပေးပို့ခြင်း၊ ကုန်ပစ္စည်းပျက်စီးမှုပမာဏနှင့် အသုံးပြုထားသောယာဉ်များ၏ အရည်အသွေးတို့ ပါဝင်နိုင်သည်။',
-                        ' ငွေသားဘောက်ချာ- စီမံခန့်ခွဲသူအဖွဲ့သည် သေးငယ်သောအသုံးစရိတ်များကို မြန်ဆန်ထိရောက်စွာပေးချေရန်အတွက်လည်း ငွေသားကိုအသုံးပြုပြီး ထိုကုန်ကျစရိတ်များကို ဘောက်ချာများဖြင့် ကြိုတင်စာရင်းသွင်းပါသည်။ ဤကုန်ကျစရိတ်များသည် ယေဘုယျအားဖြင့် မည်သည့်စာချုပ်အောက်တွင်မှ အကျုံးမဝင်ပါ။ ယင်းအသုံးစရိတ်များအတွက် ပေးချေခြင်းကို နေ့စဉ်အသုံးစရိတ် အနည်းငယ်အတွက် စီမံခန့်ခွဲရေးဌာနမှ ရရှိနိုင်သော ငွေသားအနည်းငယ်ဖြစ်သည့် "အသေးစားငွေ" မှ လုပ်ဆောင်ပါသည်။',
-            ])
-        ]);
-
-
-
-
-        ModuleData::Create([
-            'module_id' => '5',
             'data_en' => json_encode(['Any business or company sells services(like mobile repairing) or products(like mobiles) and earns money',
                            'To sell these, first the company must make it or buy it. So, it must spend money on doing so. It must also spend on transporting the products or delivering the services. Similarly, it spends on many other aspects to make or buy the product.',
                            'As a result, a part of the company sales or revenues by selling goes back to buy or make the product/service',
@@ -108,7 +31,7 @@ class ModuleDataSeeder extends Seeder
         ]);
 
         ModuleData::Create([
-            'module_id' => '6',
+            'module_id' => '2',
             'data_en' => json_encode(['Finance department pays a huge role within a business organization',
                            'It acts as gatekeeper and keeps an eye on revenues and spends ensuring revenues are earned legally/taxes are paid/budget the spending to avoid excess expense affecting profits. Personnel working with such responsibilities are called as financial controllers',
                            'This same function works closely with other departments like strategy/operations/sales etc. to get investments(money needed) for new projects/company expansion into new geographies or any other initiative company decided upon',
@@ -126,7 +49,7 @@ class ModuleDataSeeder extends Seeder
         ]);
 
         ModuleData::Create([
-            'module_id' => '7',
+            'module_id' => '3',
             'data_en' => json_encode(['Contract management: A contract is a legal binding document detailing the monetary payment and transfer of goods, services in return of those payments. A contract has terms and conditions which needs to be followed for a successful execution. Finance team members help in managing the contracts by making/receiving payments, ensuring validity of the contract while respecting the terms and conditions',
                            'Invoice Management: Invoices are legal document raised by a company asking the other company or individual to pay in return of services or goods paid. Finance team personnel play an active role in raising invoice to customers for payment ensuring timely payments for invoice raised by vendors to their own organization.',
                            'Investment Management: This role entails to secure investment for growing the company by new business expansion, merge with or acquire another company and sometimes, by selling a part of the company to better business prospects',
@@ -138,7 +61,7 @@ class ModuleDataSeeder extends Seeder
         ]);
 
         ModuleData::Create([
-            'module_id' => '8',
+            'module_id' => '4',
             'data_en' => json_encode(['Have a clear understanding of whether the company is into to Business-to-Business sales(B2B) or Business to Consumer (B2C) sales. A large business can be into both type of sales.',
                            'A company can be in different industry like Ecommerce(Shop.com)/Telecom(Atom)/Automobile/Metals and Mining etc. Knowing the industry or the sector of the business is very helpful to understand the business',
                            'Understand the business of the company by knowing what the company sells and who buys like:',
@@ -160,5 +83,244 @@ class ModuleDataSeeder extends Seeder
                         'ဘဏ္ဍာရေးအဖွဲ့၀င်များသည် “Microsoft Excel” တွင် ငွေကြေးဆိုင်ရာ အချက်အလက်များကို ကိုင်တွယ်ဖြေရှင်းရန် မျှော်လင့်ထားသောကြောင့်၊ ထိုသို့သောကိရိယာများကို ကျွမ်းကျင်မှုရှိခြင်းသည် ထပ်လောင်းအားသာချက်တစ်ခုဖြစ်သည်။',
             ])
         ]);
+
+
+        /////////////////////////////////////////////Admin///////////////////////////////////
+        ModuleData::Create([
+            'module_id' => '5',
+            'data_en' => json_encode(['Any business or company has a department which takes care of managing the infrastructure, utilities (like electricity), company assets, and other responsibilities like travel bookings, etc.',
+                           'Infrastructure management, under admin department, may include maintenance and upkeep of office premises, security, housekeeping and cleanliness',
+                           'Utilities include electricity, water, waste disposal, heating/cooling and sewage. Admin team must ensure that these services are available and used without wastage for efficient running of the operations.',
+                           'Rented or Owned Company assets (mostly non-IT) like company vehicles, generators, cubicles, aircon etc. also come under the purview of Admin team',
+                           'Administration department like IT department is a very important enabler for any business organization'
+                ]),
+            'data_mm' => json_encode(['မည်သည့်လုပ်ငန်း သို့မဟုတ် ကုမ္ပဏီမဆို အခြေခံအဆောက်အအုံ၊ အသုံးအဆောင်များ (လျှပ်စစ်ဓာတ်အား)၊ ကုမ္ပဏီ၏ပိုင်ဆိုင်မှုများနှင့် ခရီးသွားကြိုတင်စာရင်းသွင်းခြင်း စသည်တို့ကဲ့သို့သော အခြားတာဝန်များကို စီမံခန့်ခွဲပေးသည့် ဌာနတစ်ခုရှိသည်။',
+                        'စီမံခန့်ခွဲရေးဌာနလက်အောက်ရှိ အခြေခံအဆောက်အဦစီမံခန့်ခွဲမှု၊ ရုံးပရဝုဏ်ကို ပြုပြင်ထိန်းသိမ်းမှု၊ လုံခြုံရေး၊ အိမ်သန့်ရှင်းရေးနှင့် သန့်ရှင်းရေးတို့ ပါဝင်နိုင်သည်။',
+                        'အသုံးအဆောင်များတွင် လျှပ်စစ်၊ ရေ၊ အမှိုက်စွန့်ပစ်မှု၊ အပူ/အအေးခံခြင်းနှင့် မိလ္လာများ ပါဝင်သည်။ စီမံခန့်ခွဲသူအဖွဲ့သည် ဤဝန်ဆောင်မှုများကို ရရှိနိုင်ပြီး လုပ်ဆောင်ချက်များကို ထိရောက်စွာလည်ပတ်နိုင်ရန် အလေအလွင့်မရှိဘဲ အသုံးပြုကြောင်း သေချာစေရမည်။',
+                        'အသုံးအဆောင်များတွင် လျှပ်စစ်၊ ရေ၊ အမှိုက်စွန့်ပစ်မှု၊ အပူ/အအေးခံခြင်းနှင့် မိလ္လာများ ပါဝင်သည်။ စီမံခန့်ခွဲသူအဖွဲ့သည် ဤဝန်ဆောင်မှုများကို ရရှိနိုင်ပြီး လုပ်ဆောင်ချက်များကို ထိရောက်စွာလည်ပတ်နိုင်ရန် အလေအလွင့်မရှိဘဲ အသုံးပြုကြောင်း သေချာစေရမည်။',
+                        'အိုင်တီဌာနကဲ့သို့ စီမံခန့်ခွဲရေးဌာနသည် လုပ်ငန်းအဖွဲ့အစည်းတိုင်းအတွက် အလွန်အရေးပါသော လုပ်ငန်းဆောင်တာတစ်ခုဖြစ်သည်။'
+            ])
+        ]);
+
+        ModuleData::Create([
+            'module_id' => '6',
+            'data_en' => json_encode(['Administration teams look for new vendors(with support from procurement teams), negotiate contracts and ensure efficient of services or assets. In general, these assets /services are not IT related.',
+                           'Contracts with respect to physical security of the business premises and employee transportation is also under admin department',
+                           'As for other departments Admin team also works with budget and plans the expense with reference to these budgets',
+                           'Admin expenses with respect to budgeting is an important key performance indicator(KPI) for Admin team',
+                           'Additionally, administration team members ensure timely payment of utility bills and availability of such services for smooth running of the organization.',
+                           'This team also helps in arranging power backup or support with alternate vendors in case of any disruption with the existing vendors/services'
+                ]),
+            'data_mm' => json_encode(['အုပ်ချုပ်ရေးအဖွဲ့များသည် ရောင်းသူအသစ်များ (ဝယ်ယူရေးအဖွဲ့များထံမှ ပံ့ပိုးမှုဖြင့်)၊ စာချုပ်များကို ညှိနှိုင်းပြီး ဝန်ဆောင်မှုများ သို့မဟုတ် ပိုင်ဆိုင်မှုများကို ထိရောက်မှုရှိစေရန် သေချာစေသည်။ ယေဘုယျအားဖြင့်၊ ဤပိုင်ဆိုင်မှု/ဝန်ဆောင်မှုများသည် IT နှင့်မသက်ဆိုင်ပါ။',
+                        'လုပ်ငန်းခွင်လုံခြုံရေးနှင့် ဝန်ထမ်းသယ်ယူပို့ဆောင်ရေးဆိုင်ရာ စာချုပ်များသည် စီမံခန့်ခွဲရေးဌာန၏ လက်အောက်တွင်ရှိသည်။',
+                        'အခြားဌာနများအတွက် စီမံခန့်ခွဲရေးအဖွဲ့သည်လည်း ဘတ်ဂျက်ဖြင့် လုပ်ဆောင်ပြီး အဆိုပါဘတ်ဂျက်များကို ကိုးကား၍ ကုန်ကျစရိတ်များကို စီစဉ်ပေးသည်။',
+                        'ထို့အပြင်၊ စီမံခန့်ခွဲရေးအဖွဲ့၀င်များသည် အဖွဲ့အစည်း၏လည်ပတ်မှုချောမွေ့စေရန်အတွက် utility bills များကို အချိန်နှင့်တစ်ပြေးညီ ပေးချေနိုင်စေရန်နှင့် ထိုဝန်ဆောင်မှုများရရှိနိုင်မှုကို သေချာစေသည်။',
+                        'ဤအဖွဲ့သည် လက်ရှိရောင်းချသူများ/ဝန်ဆောင်မှုများနှင့် အနှောင့်အယှက်တစ်စုံတစ်ရာဖြစ်လာပါက ပါဝါအရန်သိမ်းခြင်း သို့မဟုတ် အစားထိုးရောင်းချသူများနှင့် ပံ့ပိုးကူညီရာတွင်လည်း ကူညီပေးပါသည်။'
+            ])
+        ]);
+
+        ModuleData::Create([
+            'module_id' => '7',
+            'data_en' => json_encode(['Vendor Management: Long-term Contract Management with vendors is a part of this role. Contracts are generally negotiated on quality of service/duration and pricing. Representative list of  contracts under Admin team are as below:',
+                           '- Housekeeping Staff Contract for upkeep of office premises',
+                           '- Contract with security companies for physical security of office premises',
+                           '- Transportation vendor contracts for local and international travel',
+                           '- Contract with cafeteria vendors for employee food arrangements',
+                           'Asset Management: Except IT assts like laptop/mobile/desktop etc. most other assets like furniture, company vehicles, white goods like Aircon etc. are managed by admin personnel. Such responsibility will also include regular and timely maintenance of these assets.',
+                           'Administration team personnel work closely with other departments like IT/HR/Operations/finances and sales for any interdepartmental projects'
+                ]),
+            'data_mm' => json_encode(['ရောင်းချသူစီမံခန့်ခွဲမှု- ရောင်းချသူများနှင့် ရေရှည်စာချုပ်စီမံခန့်ခွဲမှုသည် ဤအခန်းကဏ္ဍ၏ အစိတ်အပိုင်းတစ်ခုဖြစ်သည်။ စာချုပ်များသည် ဝန်ဆောင်မှုအရည်အသွေး/ကာလနှင့် ဈေးနှုန်းအပေါ် ယေဘုယျအားဖြင့် ညှိနှိုင်းကြသည်။ Admin Team လက်အောက်ရှိ စာချုပ်ကိုယ် စားလှယ်များစာရင်းမှာ အောက်ပါအတိုင်းဖြစ်သည်။',
+                        '- ရုံးခန်းပရဝုဏ်ကို ပြုပြင်ထိန်းသိမ်းရန်အတွက် နေရာထိုင်ခင်းဝန်ထမ်း စာချုပ်',
+                        '- ရုံးပရဝုဏ်အတွင်း လုံခြုံရေးအတွက် လုံခြုံရေးကုမ္ပဏီများနှင့် စာချုပ်ချုပ်ဆိုခြင်း။',
+                        '- ပြည်တွင်းပြည်ပ ခရီးသွားများအတွက် သယ်ယူပို့ဆောင်ရေး ရောင်းချသူ စာချုပ်များ',
+                        '- ဝန်ထမ်းအစားအသောက်အစီအစဉ်များအတွက် ကော်ဖီဆိုင်ရောင်းချသူများနှင့် စာချုပ်ချုပ်ဆိုခြင်း။',
+                        'ပိုင်ဆိုင်မှုစီမံခန့်ခွဲမှု- လက်ပ်တော့/မိုဘိုင်း/ဒက်စ်တော့စသည့် အိုင်တီအကူအညီမှလွဲ၍ အခြားပစ္စည်းများ၊ ပရိဘောဂများ၊ ကုမ္ပဏီယာဉ်များ၊ Aircon ကဲ့သို့သော အဖြူရောင်ပစ္စည်းများစသည်ဖြင့် စီမံခန့်ခွဲရေးဝန်ထမ်းများက စီမံခန့်ခွဲပါသည်။ ဤတာဝန်ဝတ္တရားများသည် ဤပိုင်ဆိုင်မှုများကို ပုံမှန်နှင့် အချိန်မီ ထိန်းသိမ်းခြင်းလည်း ပါဝင်သည်။',
+                        'အုပ်ချုပ်ရေးအဖွဲ့မှ ဝန်ထမ်းများသည် IT/HR/Operations/ Finance နှင့် အရောင်းဌာနများကဲ့သို့သော အခြားဌာနများနှင့် နီးနီးကပ်ကပ် အလုပ်လုပ်ပါသည်။'
+            ])
+        ]);
+
+        ModuleData::Create([
+            'module_id' => '8',
+            'data_en' => json_encode(['Annual Maintenance Contract: Contracts for regular maintenance and support for company assets during the year.',
+                           'Housekeeping: Contractual staff used for keeping office premises clean and hygienic.',
+                           'Invoice: Invoices are legal document raised by the vendor company asking the other company to pay in return of services or goods provided. Admin team checks and confirms the payment request put by vendor on invoices for services under admin department',
+                           'Service Level Agreements(SLA): SLA serves refers to the standards the vendor must follow and the metrics to measure the performance. Some examples as below:',
+                           '- SLA for a new purchase of Aircon may include periodic checkup/maintenance and free of cost replacement within 6 months of purchase',
+                           '- SLA for a housekeeping contract may include minimum number of housekeeping staff provided by vendor for any day',
+                           '- SLA for transportation vendor providing vehicles for company people or goods may include on time delivery, quantity of goods damage and quality of vehicles used',
+                           'Cash Voucher : Admin team also uses cash for quick and efficient payments of small expenses and such expenses are booked by vouchers. Thes expenses are generally not covered under any contract. The payment for such expenses are done from “petty cash” which are small amounts of cash available with Admin department for smaller amounts of daily expenses.'
+                ]),
+            'data_mm' => json_encode(['နှစ်စဉ်ထိန်းသိမ်းမှုစာချုပ်- တစ်နှစ်တာအတွင်း ကုမ္ပဏီပိုင်ဆိုင်မှုများအတွက် ပုံမှန်ထိန်းသိမ်းမှုနှင့် ပံ့ပိုးမှုများအတွက် စာချုပ်များ။',
+                        'နေရာထိုင်ခင်းထိန်းသိမ်းခြင်း- ရုံးခန်းပရဝုဏ်အတွင်း သန့်ရှင်းရေးနှင့် တစ်ကိုယ်ရေသန့်ရှင်းမှုအတွက် အသုံးပြုသည့် စာချုပ်ပါဝန်ထမ်းများ။',
+                        'ပြေစာ- ပြေစာများသည် အခြားကုမ္ပဏီအား ဝန်ဆောင်မှုများ သို့မဟုတ် ကုန်ပစ္စည်းများ ပြန်လည်ပေးချေရန် တောင်းဆိုသည့် ရောင်းချသူကုမ္ပဏီမှ တရားဝင်စာရွက်စာတမ်းများဖြစ်သည်။ အက်ဒ်မင်အဖွဲ့သည် စီမံခန့်ခွဲသူဌာနလက်အောက်ရှိ ဝန်ဆောင်မှုများအတွက် ပြေစာများတွင် ရောင်းချသူမှ တောင်းဆိုသည့် ငွေပေးချေမှုကို စစ်ဆေးပြီး အတည်ပြုသည်။',
+                        'ဝန်ဆောင်မှုအဆင့် သဘောတူညီချက်များ(SLA)- SLA သည် ရောင်းချသူလိုက်နာရမည့် စံနှုန်းများနှင့် စွမ်းဆောင်ရည်ကို တိုင်းတာရန် မက်ထရစ်များကို ရည်ညွှန်းသည်။ အောက်ပါအတိုင်းဖြစ်သည်။',
+                        '- Aircon အသစ်ဝယ်ယူမှုအတွက် SLA သည် အချိန်ကာလအလိုက် စစ်ဆေးခြင်း/ ပြုပြင်ထိန်းသိမ်းခြင်း နှင့် ဝယ်ယူပြီး 6 လအတွင်း အခမဲ့ အစားထိုးလဲလှယ်ခြင်း ပါဝင်သည်။',
+                        '- SLA သည် အိမ်တွင်းရေးစာချုပ်တစ်ခုအတွက် မည်သည့်နေ့အတွက်မဆို ရောင်းချသူမှ ပံ့ပိုးပေးသော အနည်းဆုံး အိမ်စောင့်ဝန်ထမ်းအရေအတွက် ပါဝင်သည်။',
+                        '- သယ်ယူပို့ဆောင်ရေးရောင်းချသူအတွက် SLA သည် ကုမ္ပဏီလူများအတွက် သို့မဟုတ် ကုန်ပစ္စည်းများကို အချိန်မီပေးပို့ခြင်း၊ ကုန်ပစ္စည်းပျက်စီးမှုပမာဏနှင့် အသုံးပြုထားသောယာဉ်များ၏ အရည်အသွေးတို့ ပါဝင်နိုင်သည်။',
+                        ' ငွေသားဘောက်ချာ- စီမံခန့်ခွဲသူအဖွဲ့သည် သေးငယ်သောအသုံးစရိတ်များကို မြန်ဆန်ထိရောက်စွာပေးချေရန်အတွက်လည်း ငွေသားကိုအသုံးပြုပြီး ထိုကုန်ကျစရိတ်များကို ဘောက်ချာများဖြင့် ကြိုတင်စာရင်းသွင်းပါသည်။ ဤကုန်ကျစရိတ်များသည် ယေဘုယျအားဖြင့် မည်သည့်စာချုပ်အောက်တွင်မှ အကျုံးမဝင်ပါ။ ယင်းအသုံးစရိတ်များအတွက် ပေးချေခြင်းကို နေ့စဉ်အသုံးစရိတ် အနည်းငယ်အတွက် စီမံခန့်ခွဲရေးဌာနမှ ရရှိနိုင်သော ငွေသားအနည်းငယ်ဖြစ်သည့် "အသေးစားငွေ" မှ လုပ်ဆောင်ပါသည်။',
+            ])
+        ]);
+
+
+        //////////////////////////////////////IT//////////////////////////////////////////
+        ModuleData::Create([
+            'module_id' => '9',
+            'data_en' => json_encode(['Any  business or company depends today on Information Technology(IT)',
+                           'IT refers to information flow between computer/software/hardware/network within an organization.',
+                           'Everything to do with buying, managing and security of computer/ software/ hardware/ network is with IT',
+                           'As today most companies generate huge volumes information or data so secured storage of such data within or outside organization is also under the purview of IT',
+                           'Due to 24/7 use IT systems and software with exposure to internet ,Cybersecurity, a branch of IT which deals with security from attack from internet, has become very important for companies in recent years.',
+                ]),
+            'data_mm' => json_encode(['မည်သည့်လုပ်ငန်း သို့မဟုတ် ကုမ္ပဏီမဆို ယနေ့ခေတ် သတင်းအချက်အလက်နည်းပညာ (IT) ပေါ်တွင် မူတည်ပါသည်။',
+                        'IT ဆိုသည်မှာ အဖွဲ့အစည်းအတွင်း ကွန်ပျူတာ/ဆော့ဖ်ဝဲလ်/ဟာ့ဒ်ဝဲ/ကွန်ရက်များကြား သတင်းအချက်အလက်စီးဆင်းမှုကို ရည်ညွှန်းသည်။',
+                        'ကွန်ပြူတာ/ဆော့ဖ်ဝဲလ်/ဟာ့ဒ်ဝဲ/ကွန်ရက်၏ လုံခြုံရေးကို ဝယ်ယူခြင်း၊ စီမံခန့်ခွဲခြင်းနှင့် လုံခြုံရေးသည် IT နှင့် သက်ဆိုင်သည်။',
+                        'ယနေ့ခေတ် ကုမ္ပဏီအများစုသည် များပြားလှသော အချက်အလက် သို့မဟုတ် ဒေတာများကို ထုတ်ပေးသည်ဖြစ်သောကြောင့် အဖွဲ့အစည်းအတွင်း သို့မဟုတ် ပြင်ပတွင် ထိုဒေတာများကို လုံခြုံစွာသိမ်းဆည်းခြင်းသည် IT ၏ ဦးစားပေးမှုအောက်တွင်ရှိသည်။',
+                        'အင်တာနက်နှင့် ထိတွေ့မှုရှိသော IT စနစ်များနှင့် ဆော့ဖ်ဝဲလ်များကို 24/7 အသုံးပြုခြင်းကြောင့်၊ အင်တာနက်မှ တိုက်ခိုက်ခံရခြင်းမှ လုံခြုံရေးဆိုင်ရာ အိုင်တီဌာနခွဲဖြစ်သော Cybersecurity သည် မကြာသေးမီနှစ်များအတွင်း ကုမ္ပဏီများအတွက် အလွန်အရေးကြီးလာသည်။',
+            ])
+        ]);
+        ModuleData::Create([
+            'module_id' => '10',
+            'data_en' => json_encode(['Information Technology roles primarily focusses on:',
+                           '- Software development/buying, or support needed to keep the software working',
+                           '- Buying and Maintenance Hardware like laptops/computers/cables/servers for storage etc.',
+                           '- Managing vendors for internet/telecom services which the company uses for its business operations',
+                           'While some Companies can be in business of IT services and/or hardware manufacturing and selling there are many others which uses IT for efficient business running',
+                           'Dell sells hardware(laptops/servers), but Apple sells hardware(phones)/software(IOS),Google mostly into software business…are some examples of companies in IT business',
+                           'Most important performance criteria  for IT are money spent on IT systems/software and uptime(continuous running of software or hardware)',
+                           'If IT systems get affected due some issue with software(virus/upgradation/coding issues) and hardware malfunctioning the whole organizational work can stop',
+                ]),
+            'data_mm' => json_encode(['သတင်းအချက်အလက်နည်းပညာဆိုင်ရာ အခန်းကဏ္ဍများကို အဓိကအားဖြင့်',
+                        '- ဆော့ဖ်ဝဲလ် ဖွံ့ဖြိုးတိုးတက်မှု/ဝယ်ယူခြင်း သို့မဟုတ် ဆော့ဖ်ဝဲကို ဆက်လက်လုပ်ဆောင်ရန် လိုအပ်သော ပံ့ပိုးကူညီမှု',
+                        '- လက်ပ်တော့/ကွန်ပြူတာ/ကေဘယ်ကြိုးများ/ဆာဗာများ စသည်တို့ကဲ့သို့ ဟာ့ဒ်ဝဲများကို ဝယ်ယူထိန်းသိမ်းခြင်း။',
+                        '- ကုမ္ပဏီ၏လုပ်ငန်းလည်ပတ်မှုအတွက်အသုံးပြုသည့်အင်တာနက်/တယ်လီကွန်းဝန်ဆောင်မှုများအတွက်ရောင်းချသူများကိုစီမံခန့်ခွဲခြင်း။',
+                        'အချို့သောကုမ္ပဏီများသည် အိုင်တီဝန်ဆောင်မှုများနှင့်/သို့မဟုတ် ဟာ့ဒ်ဝဲများထုတ်လုပ်ရောင်းချခြင်းတို့ကို ကောင်းစွာလုပ်ဆောင်နိုင်သော်လည်း အခြားကုမ္ပဏီများသည် အိုင်တီကို ထိရောက်စွာလည်ပတ်ရန်အတွက် အိုင်တီကိုအသုံးပြုသည့် အခြားသူများလည်းရှိသေးသည်။',
+                        'Dell သည် ဟာ့ဒ်ဝဲ(လက်ပ်တော့/ဆာဗာများ)ကို ရောင်းချသော်လည်း Apple သည် ဟာ့ဒ်ဝဲ(ဖုန်း)/ဆော့ဖ်ဝဲလ်(IOS)၊ Google အား ဆော့ဖ်ဝဲလ်လုပ်ငန်းအဖြစ် အများစုရောင်းချသည်... အိုင်တီလုပ်ငန်းရှိ ကုမ္ပဏီအချို့၏ ဥပမာများဖြစ်သည်။',
+                        'T အတွက် အရေးကြီးဆုံး စွမ်းဆောင်ရည် စံသတ်မှတ်ချက်များမှာ IT စနစ်များ/ဆော့ဖ်ဝဲလ်နှင့် အလုပ်ချိန် (ဆော့ဖ်ဝဲလ် သို့မဟုတ် ဟာ့ဒ်ဝဲများကို အဆက်မပြတ် လည်ပတ်နေသည့် ငွေကြေး)',
+                        'ဆော့ဖ်ဝဲလ် (ဗိုင်းရပ်စ်/ အဆင့်မြှင့်တင်ခြင်း/ ကုဒ်ရေးခြင်းဆိုင်ရာ ပြဿနာများ) နှင့် ဟာ့ဒ်ဝဲဆိုင်ရာ ပြဿနာအချို့ကြောင့် အိုင်တီစနစ်များ ထိခိုက်ပါက အဖွဲ့အစည်းလုပ်ငန်းတစ်ခုလုံး ရပ်တန့်သွားနိုင်သည်။',
+            ])
+        ]);
+        ModuleData::Create([
+            'module_id' => '11',
+            'data_en' => json_encode(['Vendor management: Buying latest software and hardware at the best pricing involves managing vendor by placing buying orders /negotiating the deals/ensuring delivery and payment on time. The role requires IT personnel with understanding of the software or hardware features. Long-term Contract Management with such vendors is also a part this role. Software developer and hardware vendors are also referred as OEM.(Original Equipment Manufacturer)',
+                           'Software and Hardware management: Ensuring all systems and software are running continuously',
+                           'Securing organization from internal or external cybersecurity threats',
+                           'A company in IT business must the above roles for both internal business operations and external clients',
+                           'IT personnel also do audits of the IT systems to detect any existing/potential issues.',
+                ]),
+            'data_mm' => json_encode(['ရောင်းချသူစီမံခန့်ခွဲမှု- နောက်ဆုံးပေါ် ဆော့ဖ်ဝဲနှင့် ဟာ့ဒ်ဝဲများကို အကောင်းဆုံးစျေးနှုန်းဖြင့် ဝယ်ယူခြင်းသည် ဝယ်ယူမှုအမှာစာများချခြင်း / သဘောတူညီချက်များကို ညှိနှိုင်းခြင်း / ပေးပို့ခြင်းနှင့် ငွေပေးချေခြင်းတို့ကို အချိန်မီသေချာစေခြင်းဖြင့် ရောင်းချသူကို စီမံခန့်ခွဲခြင်းပါဝင်သည်။ ဆော့ဖ်ဝဲလ် သို့မဟုတ် ဟာ့ဒ်ဝဲအင်္ဂါရပ်များကို နားလည်သဘောပေါက်သည့် IT ဝန်ထမ်းများ လိုအပ်သည်။ ထိုသို့ရောင်းချသူများနှင့် ရေရှည်စာချုပ်စီမံခန့်ခွဲမှုသည်လည်း ဤအခန်းကဏ္ဍမှ ပါဝင်ပါသည်။ ဆော့ဖ်ဝဲတီထွင်သူနှင့် ဟာ့ဒ်ဝဲရောင်းချသူများကို OEM အဖြစ်လည်းရည်ညွှန်းပါသည်။(မူရင်းစက်ပစ္စည်းထုတ်လုပ်သူ)',
+                        'ဆော့ဖ်ဝဲလ်နှင့် ဟာ့ဒ်ဝဲစီမံခန့်ခွဲမှု- စနစ်များနှင့် ဆော့ဖ်ဝဲလ်အားလုံးကို စဉ်ဆက်မပြတ်လည်ပတ်နေစေရန် သေချာစေခြင်း။',
+                        'အဖွဲ့အစည်းတွင်း သို့မဟုတ် ပြင်ပဆိုက်ဘာလုံခြုံရေးခြိမ်းခြောက်မှုများမှ လုံခြုံစေခြင်း။',
+                        'အိုင်တီလုပ်ငန်းရှိ ကုမ္ပဏီတစ်ခုသည် အတွင်းပိုင်းလုပ်ငန်းလည်ပတ်မှုနှင့် ပြင်ပဖောက်သည်များအတွက် အထက်ဖော်ပြပါ အခန်းကဏ္ဍများ ရှိရမည်။',
+                        'အိုင်တီဝန်ထမ်းများသည် ရှိပြီးသား/ဖြစ်နိုင်ချေရှိသော ပြဿနာများကို သိရှိနိုင်စေရန် အိုင်တီစနစ်များ၏ စာရင်းစစ်များကိုလည်း ပြုလုပ်ပါသည်။',
+            ])
+        ]);
+        ModuleData::Create([
+            'module_id' => '12',
+            'data_en' => json_encode(['Service Level Agreement(SLA):Means the parameters the service of software or hardware will be measured. A very common SLA is Uptime of 99.99%, means the software should function smoothly and doesn’t stop(no downtime) for 99.99 out of 100 times. Other common SLA are 24*7 support and resolution of anytime within 24 hours.',
+                           'Software upgrade: As software developers improve their software, they upgrade it and asks its customers to do the same.',
+                           'Annual Maintenance Contract(AMC):Contract for annual support to maintain the software (like upgradation etc.).Same can be for hardware too.',
+                           'Software License: Software licenses typically provide end users with the right to one or more copies of the software without violating copyrights.',
+                           'IT Asset Management: Companies own laptops/desktops/cables/servers/headphones etc. All these hardware is referred to IT assets and managing these is asset management. Keeping a count of hardware across the organization is a part of IT asset management activity.',
+                ]),
+            'data_mm' => json_encode(['ဝန်ဆောင်မှုအဆင့် သဘောတူညီချက်(SLA)-ဆော့ဖ်ဝဲလ် သို့မဟုတ် ဟာ့ဒ်ဝဲဝန်ဆောင်မှု၏ ကန့်သတ်ချက်များကို တိုင်းတာမည်ကို ဆိုလိုသည်။ အလွန်အသုံးများသော SLA သည် Uptime ၏ 99.99% ဖြစ်သည်ဆိုလိုသည်မှာ ဆော့ဖ်ဝဲသည် ချောမွေ့စွာလုပ်ဆောင်နိုင်ပြီး အကြိမ် 100 တွင် 99.99 (ရပ်နေခြင်းမရှိ) ကို ဆိုလိုသည်။ အခြားအသုံးများသော SLA များသည် 24*7 ပံ့ပိုးမှုနှင့် 24 နာရီအတွင်း အချိန်မရွေးဖြေရှင်းနိုင်သည် ။',
+                        'ဆော့ဖ်ဝဲလ်အဆင့်မြှင့်တင်ခြင်း- ဆော့ဖ်ဝဲရေးဆွဲသူများသည် ၎င်းတို့၏ဆော့ဖ်ဝဲလ်ကို ပိုမိုကောင်းမွန်အောင်ပြုလုပ်သောအခါ ၎င်းတို့က ၎င်းကို အဆင့်မြှင့်တင်ပြီး ၎င်း၏ဖောက်သည်များအား အလားတူလုပ်ဆောင်ရန် တောင်းဆိုသည်။',
+                        'နှစ်စဉ်ထိန်းသိမ်းမှုစာချုပ်(AMC): ဆော့ဖ်ဝဲလ်ကို ထိန်းသိမ်းရန် နှစ်အလိုက်ပံ့ပိုးမှုဆိုင်ရာ စာချုပ် (မွမ်းမံပြင်ဆင်ခြင်းစသည်ဖြင့်)။ ဟာ့ဒ်ဝဲအတွက်လည်း အလားတူဖြစ်နိုင်သည်။',
+                        'ဆော့ဖ်ဝဲလ်လိုင်စင်- ဆော့ဖ်ဝဲလ်လိုင်စင်များသည် ပုံမှန်အားဖြင့် သုံးစွဲသူများအား မူပိုင်ခွင့်ကို မချိုးဖောက်ဘဲ ဆော့ဖ်ဝဲ၏ ကော်ပီတစ်ခု သို့မဟုတ် တစ်ခုထက်ပိုသော မိတ္တူများကို ပေးပိုင်ခွင့်ရှိသည်။',
+                        'IT ပိုင်ဆိုင်မှုစီမံခန့်ခွဲမှု- ကုမ္ပဏီများသည် လက်တော့ပ်/ဒက်စ်တော့/ကြိုးများ/ဆာဗာများ/နားကြပ်များ စသည်တို့ကို ပိုင်ဆိုင်သည်။ ဤဟာ့ဒ်ဝဲအားလုံးကို အိုင်တီပိုင်ဆိုင်မှုများကို ရည်ညွှန်းပြီး ၎င်းတို့ကို စီမံခန့်ခွဲခြင်းသည် ပိုင်ဆိုင်မှုစီမံခန့်ခွဲမှုဖြစ်သည်။ အဖွဲ့အစည်းအတွင်း ဟာ့ဒ်ဝဲအရေအတွက်ကို ထားရှိခြင်းသည် IT ပိုင်ဆိုင်မှုစီမံခန့်ခွဲမှု လုပ်ဆောင်ချက်၏ တစ်စိတ်တစ်ပိုင်းဖြစ်သည်။',
+            ])
+        ]);
+
+
+        /////////////////////////////////////S&M//////////////////////
+        ModuleData::Create([
+            'module_id' => '13',
+            'data_en' => json_encode(['Any  business or company sells services(like softwares) or products(like mobiles) and earns money',
+                           'To sell these products or services, first the company must make it or buy it. So, it must spend money on doing so. It must also spend on transporting the products or delivering the services. Similarly, it spends on many on sales and marketing to ensure that the product reaches the right customer.',
+                           'Sales is the process of taking these products and/or delivering the services to the right customer',
+                           'Marketing is informing companies/customers/business partners about your products and services. Marketing can be on billboards/social media/apps/news papers or any other media.',
+                           'Sales and Marketing is important for all companies whether selling to another company(B2B) or to individual customer(B2C) or to an individual via another company(B2B2C)',
+                ]),
+            'data_mm' => json_encode(['မည်သည့်လုပ်ငန်း သို့မဟုတ် ကုမ္ပဏီမဆို ဝန်ဆောင်မှုများ (ဆော့ဖ်ဝဲများကဲ့သို့) သို့မဟုတ် ထုတ်ကုန်များ (မိုဘိုင်းလ်များကဲ့သို့) ရောင်းချပြီး ငွေရှာသည်။',
+                        'ဤထုတ်ကုန်များ သို့မဟုတ် ဝန်ဆောင်မှုများကို ရောင်းချရန်အတွက် ကုမ္ပဏီသည် ဦးစွာပြုလုပ်ရမည် သို့မဟုတ် ဝယ်ယူရမည်ဖြစ်သည်။ ဒါကြောင့် ဒီလိုလုပ်ဖို့အတွက် ပိုက်ဆံသုံးရမယ်။ ၎င်းသည် ကုန်ပစ္စည်းများ သယ်ယူပို့ဆောင်ခြင်း သို့မဟုတ် ဝန်ဆောင်မှုများ ပေးပို့ခြင်းအတွက်လည်း သုံးစွဲရမည်ဖြစ်သည်။ အလားတူပင်၊ ကုန်ပစ္စည်းသည် မှန်ကန်သောဖောက်သည်ရောက်ရှိကြောင်း သေချာစေရန်အတွက် အရောင်းနှင့် စျေးကွက်ချဲ့ထွင်မှုတွင် များစွာသုံးစွဲပါသည်။',
+                        'အရောင်းသည် ဤထုတ်ကုန်များကိုရယူခြင်းနှင့်/သို့မဟုတ် မှန်ကန်သောဖောက်သည်ထံသို့ ဝန်ဆောင်မှုများပေးအပ်ခြင်းလုပ်ငန်းစဉ်ဖြစ်သည်။',
+                        'စျေးကွက်ရှာဖွေခြင်းသည် သင့်ထုတ်ကုန်များနှင့် ဝန်ဆောင်မှုများအကြောင်း ကုမ္ပဏီ/ဖောက်သည်များ/စီးပွားရေးလုပ်ဖော်ကိုင်ဖက်များအား အသိပေးခြင်းဖြစ်သည်။ စျေးကွက်ရှာဖွေရေးသည် ကြော်ငြာဘုတ်များ/လူမှုမီဒီယာ/အက်ပ်များ/သတင်းစာရွက်များ သို့မဟုတ် အခြားမီဒီယာတစ်ခုခုတွင် ဖြစ်နိုင်သည်။',
+                        'အရောင်းနှင့် စျေးကွက်ရှာဖွေရေးသည် အခြားကုမ္ပဏီ (B2B) သို့ ရောင်းချသည်ဖြစ်စေ ဖောက်သည်တစ်ဦးချင်း (B2C) သို့မဟုတ် အခြားကုမ္ပဏီတစ်ခု (B2B2C) မှတစ်ဆင့် တစ်ဦးချင်းထံ ရောင်းချသည်ဖြစ်စေ ကုမ္ပဏီအားလုံးအတွက် အရေးကြီးပါသည်။',
+            ])
+        ]);
+        ModuleData::Create([
+            'module_id' => '14',
+            'data_en' => json_encode(['A salesperson is the bridge between the customer(client) and the company that is selling.',
+                           'Salesperson is involved in the below activities:',
+                           '- Acquire new customers',
+                           '- Successfully show service solutions and features',
+                           '- Handling presentations in meetings and proactively communicating with prospects and customers to ensure exceptional customer satisfaction',
+                           '- Onboard new clients after making sales and raising the invoice for the product or service sold',
+                           '- Increase sales revenue with existing clients by selling additional',
+                           'Marketing team members do market research to identify target customer, develop successful marketing campaigns and work to increase the market for the product or services',
+                           'Sales and Marketing work together for increasing company revenues',
+                ]),
+            'data_mm' => json_encode(['အရောင်းသမားသည် ဖောက်သည် (ဖောက်သည်) နှင့် ရောင်းချနေသော ကုမ္ပဏီကြား တံတားဖြစ်သည်။',
+                        'အရောင်းဝန်ထမ်းသည် အောက်ဖော်ပြပါ လုပ်ဆောင်ချက်များတွင် ပါဝင်ပါသည်။',
+                        '- ဖောက်သည်အသစ်များရယူပါ။',
+                        '- ဝန်ဆောင်မှုဖြေရှင်းချက်များနှင့် အင်္ဂါရပ်များကို အောင်မြင်စွာပြသပါ။',
+                        '- အစည်းအဝေးများတွင် တင်ပြချက်များကို ကိုင်တွယ်ဖြေရှင်းပြီး ထူးခြားသည့်ဖောက်သည်များ စိတ်ကျေနပ်မှုရရှိစေရန် အလားအလာများနှင့် ဖောက်သည်များနှင့် တက်ကြွစွာ ဆက်သွယ်ပြောဆိုခြင်း၊',
+                        '- အရောင်းမြှင့်တင်ပြီး ကုန်ပစ္စည်း သို့မဟုတ် ဝန်ဆောင်မှုအတွက် ပြေစာတင်ပြီးနောက် ဖောက်သည်အသစ်များကို ခေါ်ယူပါ။',
+                        '- ထပ်လောင်းရောင်းချခြင်းဖြင့် လက်ရှိဖောက်သည်များနှင့်အတူ အရောင်းဝင်ငွေတိုးပါ။',
+                        'စျေးကွက်ရှာဖွေရေး အဖွဲ့၀င်များသည် ပစ်မှတ်ဖောက်သည်များကို ခွဲခြားသတ်မှတ်ရန်၊ အောင်မြင်သော စျေးကွက်ရှာဖွေရေး ကမ်ပိန်းများ ဖော်ဆောင်ရန်နှင့် ထုတ်ကုန် သို့မဟုတ် ဝန်ဆောင်မှုများအတွက် စျေးကွက်ချဲ့ထွင်ရန် လုပ်ဆောင်ရန် စျေးကွက်ရှာဖွေမှု ပြုလုပ်ပါသည်။',
+                        'အရောင်းနှင့် စျေးကွက်ရှာဖွေရေးသည် ကုမ္ပဏီ၏ ၀င်ငွေများ တိုးလာစေရန် အတူတကွ လုပ်ဆောင်သည်။',
+            ])
+        ]);
+        ModuleData::Create([
+            'module_id' => '15',
+            'data_en' => json_encode(['Sales Expenses refers to money spent on conducting the sales like',
+                           '- Sales personnel salary',
+                           '- Cost to connect with existing or new clients like telecommunication cost/internet expenses',
+                           '- Client Management(hosting dinners etc.) and Travelling cost for customer connects',
+                           '- Social Media Cost like Linkedin Premium fees ',
+                           'Sales cost will vary depending on product or services to be delivered and the type of business (B2B or B2C) like:',
+                           '- Company making and selling metal products to another business which uses these products in construction will have less social media cost and more direct selling cost like salary/travelling cost/client management cost etc.',
+                           'Marketing expenses will include money spent to market the products like:',
+                           '- Marketing personnel salary',
+                           '- Advertising costs on billboards/print media/organizing events',
+                           '- Marketing offers like “1 free on 1 buy”',
+                           '- Digital Marketing Campaigns on Social Media',
+                           'Many companies refer to combination of Sales and Marketing Costs as Customer Acquisition Cost',
+                ]),
+            'data_mm' => json_encode(['Sales Expenses ဆိုသည်မှာ အရောင်းအ၀ယ်ပြုလုပ်ရာတွင် အသုံးပြုသည့်ငွေကို ရည်ညွှန်းသည်။',
+                            '- အရောင်းဝန်ထမ်းလစာ',
+                            '- ဆက်သွယ်ရေးကုန်ကျစရိတ်/အင်တာနက်ကုန်ကျစရိတ်များကဲ့သို့ ရှိရင်းစွဲ သို့မဟုတ် သုံးစွဲသူအသစ်များနှင့် ချိတ်ဆက်ရန် ကုန်ကျစရိတ်',
+                            '- ဖောက်သည်စီမံခန့်ခွဲမှု (ညစာစားပွဲများစီစဉ်ပေးခြင်းစသည်) နှင့် ဖောက်သည်ချိတ်ဆက်မှုအတွက် ခရီးစရိတ်',
+                            '- Linkedin Premium အခကြေးငွေများကဲ့သို့ လူမှုမီဒီယာကုန်ကျစရိတ်',
+                            'ပေးပို့မည့် ကုန်ပစ္စည်း သို့မဟုတ် ဝန်ဆောင်မှုများနှင့် လုပ်ငန်းအမျိုးအစား (B2B သို့မဟုတ် B2C) ပေါ်မူတည်၍ အရောင်းကုန်ကျစရိတ် ကွဲပြားလိမ့်မည်-',
+                            '- ဆောက်လုပ်ရေးလုပ်ငန်းတွင် ဤထုတ်ကုန်များကို အသုံးပြုသည့် အခြားလုပ်ငန်းတစ်ခုသို့ သတ္တုထုတ်လုပ်ရောင်းချသည့် ကုမ္ပဏီသည် ဆိုရှယ်မီဒီယာကုန်ကျစရိတ်သက်သာပြီး လစာ/ခရီးစရိတ်/ဖောက်သည် စီမံခန့်ခွဲမှုစရိတ်စသည်ဖြင့် တိုက်ရိုက်ရောင်းချမှုစရိတ်စက ပိုများမည်ဖြစ်သည်။',
+                            'စျေးကွက်ရှာဖွေရေးကုန်ကျစရိတ်များသည် ထုတ်ကုန်များကို ဈေးကွက်တင်ရန်အတွက် အသုံးပြုသည့်ငွေများ ပါဝင်သည်-',
+                            '- အရောင်းဝန်ထမ်းလစာ',
+                            '- ကြော်ငြာဆိုင်းဘုတ်များ၊ ပုံနှိပ်မီဒီယာ/ ပွဲလမ်းသဘင်များ ကျင်းပရာတွင် ကုန်ကျစရိတ်',
+                            '- “၁ဝယ် ၁ခု အခမဲ့” ကဲ့သို့သော စျေးကွက်ရှာဖွေရေး ကမ်းလှမ်းချက်များ',
+                            '- ဆိုရှယ်မီဒီယာပေါ်ရှိ ဒစ်ဂျစ်တယ်စျေးကွက်ရှာဖွေရေး လှုပ်ရှားမှုများ',
+                            'ကုမ္ပဏီများစွာသည် အရောင်းနှင့် စျေးကွက်ရှာဖွေရေးကုန်ကျစရိတ်များကို Customer Acquisition Cost အဖြစ် ရည်ညွှန်းသည်။',
+                        
+            ])
+        ]);
+        ModuleData::Create([
+            'module_id' => '16',
+            'data_en' => json_encode(['Invoice: Invoices are legal document raised by a company asking the other company or individual to pay in return of services or goods provided. Revenue is the money earned when customer pays the invoiced amount',
+                           'Cold Calling/Email: Calling or sending email to prospective clients to inform about services or products being offered to sold',
+                           'Sales Pipeline: Mentions selling opportunities or deals under discussion with new or existing customers which may result in actuals sales and revenues.',
+                           'Lead: Refers to customers who may be interested and are correct personnel to make buying decision for the services or products offered. Like: For an IT company an IT director from client organization is a suitable lead for selling IT services',
+                           'Marketing Campaign: Marketing campaign helps to promote a product, a service, or the brand. Campaigns can be advertising campaigns on prints/billboard/social media etc.',
+                           'ATL stands for: “Above the Line” marketing, which refers to a form of marketing that targets a wide audience through mass media such as television, radio, and newspapers',
+                           'BTL stands for: “Below the Line” marketing, which is a more targeted and direct approach to marketing with much smaller and highly targeted world of ads, aimed at individual buyers',
+                ]),
+            'data_mm' => json_encode(['ပြေစာ- ပေးဆောင်ထားသော ဝန်ဆောင်မှုများ သို့မဟုတ် ကုန်ပစ္စည်းများ ပြန်လည်ပေးချေရန် အခြားကုမ္ပဏီ သို့မဟုတ် တစ်ဦးတစ်ယောက်အား တောင်းဆိုသည့် ကုမ္ပဏီတစ်ခုမှ တောင်းခံသည့် ပြေစာများသည် တရားဝင်စာရွက်စာတမ်းဖြစ်သည်။ ဝင်ငွေဆိုသည်မှာ ဖောက်သည် တောင်းခံထားသည့် ငွေပမာဏကို ပေးချေသည့်အခါ ရရှိသောငွေဖြစ်သည်။',
+                            'အအေးမိ ဖုန်းခေါ်ဆိုခြင်း/အီးမေးလ်- ရောင်းချရန် ကမ်းလှမ်းထားသည့် ဝန်ဆောင်မှုများ သို့မဟုတ် ထုတ်ကုန်များအကြောင်း အသိပေးရန် အလားအလာရှိသော သုံးစွဲသူများထံ ဖုန်းခေါ်ဆိုခြင်း သို့မဟုတ် အီးမေးလ်ပေးပို့ခြင်း',
+                            'အရောင်းပိုက်လိုင်း- ရောင်းချခြင်းဆိုင်ရာ အခွင့်အလမ်းများ သို့မဟုတ် အပေးအယူများ အရောင်းအ၀ယ်ပြုလုပ်ခြင်း သို့မဟုတ် လက်ရှိဖောက်သည်သစ်များနှင့် ဆွေးနွေးနေစဉ် အမှန်တကယ် အရောင်းနှင့် ၀င်ငွေများကို ဖြစ်ပေါ်စေနိုင်သည်ဟု ဖော်ပြသည်။',
+                            'ဦးဆောင်သူ- ကမ်းလှမ်းထားသော ဝန်ဆောင်မှုများ သို့မဟုတ် ထုတ်ကုန်များအတွက် ဝယ်ယူရန် ဆုံးဖြတ်ချက်ချရန် စိတ်ပါဝင်စားပြီး မှန်ကန်သော ဝန်ထမ်းများဖြစ်နိုင်သည့် ဖောက်သည်များကို ရည်ညွှန်းပါသည်။ ကြိုက်သည်- အိုင်တီကုမ္ပဏီတစ်ခုအတွက် ဖောက်သည်အဖွဲ့အစည်းမှ အိုင်တီဒါရိုက်တာတစ်ဦးသည် အိုင်တီဝန်ဆောင်မှုများကို ရောင်းချရန်အတွက် သင့်လျော်သော ဦးဆောင်သူတစ်ဦးဖြစ်သည်။',
+                            'စျေးကွက်ရှာဖွေရေး ကမ်ပိန်း- စျေးကွက်ရှာဖွေရေးကမ်ပိန်းက ထုတ်ကုန်တစ်ခု၊ ဝန်ဆောင်မှုတစ်ခု သို့မဟုတ် အမှတ်တံဆိပ်ကို မြှင့်တင်ရန် ကူညီပေးသည်။ ကမ်ပိန်းများသည် ပုံနှိပ်/ကြော်ငြာဘုတ်/ဆိုရှယ်မီဒီယာ စသည်တို့တွင် ကြော်ငြာကမ်ပိန်းများ ဖြစ်နိုင်သည်။',
+                            'ATL သည် - "Above the Line" မားကတ်တင်းသည် ရုပ်မြင်သံကြား၊ ရေဒီယိုနှင့် သတင်းစာများကဲ့သို့ ကျယ်ပြန့်သော ပရိသတ်များကို ပစ်မှတ်ထားသည့် စျေးကွက်ရှာဖွေမှုပုံစံကို ရည်ညွှန်းသည်။',
+                            'BTL သည်- "Below the Line" မားကတ်တင်းသည် သေးငယ်ပြီး အလွန်အမင်းပစ်မှတ်ထားသော ကြော်ငြာလောကဖြင့် စျေးကွက်ရှာဖွေခြင်းအတွက် ပိုမိုပစ်မှတ်ထားကာ တိုက်ရိုက်ချဉ်းကပ်မှုဖြစ်ပြီး၊ တစ်ဦးချင်းဝယ်ယူသူများအတွက် ရည်ရွယ်သည်။',
+            ])
+        ]);
+
     }
 }

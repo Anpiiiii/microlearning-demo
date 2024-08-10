@@ -19,6 +19,16 @@ class CourseSeeder extends Seeder
         ]);
 
         Course::create([
+            'title' => 'Information Technology(IT) a Business Enabler',
+            'category_id' => 2,
+        ]);
+
+        Course::create([
+            'title' => 'Sale and Marketing',
+            'category_id' => 3,
+        ]);
+
+        Course::create([
             'title' => 'Administration Function',
             'category_id' => 4
         ]);
