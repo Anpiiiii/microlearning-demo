@@ -10,6 +10,7 @@ use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\ModuleDataController;
 use App\Http\Controllers\PurchaseController;
 use App\Http\Controllers\ProgressController;
+use App\Http\Controllers\TryoutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -64,4 +65,8 @@ Route::controller(PurchaseController::class)->group(function () {
 Route::controller(ProgressController::class)->group(function () {
     Route::post('/progress-done', 'store');
     Route::get('/progress/{user}', 'myProgress');
+});
+
+Route::controller(TryoutController::class)->group(function () {
+    Route::post('/quiz/store', 'store');
 });

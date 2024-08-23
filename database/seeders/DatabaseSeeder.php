@@ -18,6 +18,6 @@ class DatabaseSeeder extends Seeder
         $this->call(ModuleDataSeeder::class);
         $this->call(QuestionSeeder::class);
         $this->call(ChoiceSeeder::class);
-        
+        $this->call(AnswerSeeder::class);
     }
 }
